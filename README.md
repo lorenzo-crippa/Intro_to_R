@@ -3,4 +3,9 @@ Introduction to R (2020) - Essex Summer School in Social Science Data Analysis, 
 
 Materials for the 2020 edition (first session)
 
-Contains slides, R files (class, exercises, and extra), and data to run them
+
+Folders:
+
+- "datasets" contains data used by r files
+
+- "r_files" contains class R code, exercises, solutions to exercises, and an extra R file to introduce ggplot2
