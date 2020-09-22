@@ -1,5 +1,6 @@
 # Intro_to_R
-Introduction to R (2020) - Essex Summer School in Social Science Data Analysis, University of Essex
+## Essex Summer School in Social Science Data Analysis, University of Essex
+## Introduction to R
 
 **Materials for the 2020 edition (first session)**
 
