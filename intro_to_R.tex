@@ -1,0 +1,165 @@
+\documentclass[xcolor=table,dvipsnames]{beamer}
+
+\usepackage{lscape, amsmath, amsfonts, amssymb, setspace, theorem, wrapfig, graphicx, float, multirow, subfig, color, rotating, multicol, datetime, natbib, venndiagram, pstricks, xkeyval, tikz, etoolbox, verbatim, pgf, tikz, pgfplots, mathrsfs, nth}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usetikzlibrary{arrows}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegreengray}{rgb}{0,0.4,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codeblue}{rgb}{0.00,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{jeopardy}{rgb}{.24,.47,.914}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreengray},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\title{1X: Introduction to R}
+\subtitle{Essex Summer School in Social Science Data Analysis -- University of Essex}
+\date{12 July, 2020}
+\author{Lorenzo Crippa}
+\institute{University of Essex -- Department of Government}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usecolortheme{seahorse}						% try others: wolverine; crane...
+
+\begin{document}
+
+\begin{frame}[plain]
+\begin{center}
+\titlepage
+\end{center}
+\end{frame}
+
+\begin{frame}{Today's session}
+Welcome! Today we'll have an introduction to the R programming language. \\ \pause
+The goals of today's session are to: \pause
+\begin{enumerate}
+\item[0.] Introduce what R and RStudio are \pause
+\item Learn about R objects and how to create them \pause
+\item Learn how to import and manage datasets \pause
+\item Learn how to generate basic plots and summary statistics \pause
+\item Learn how to run basic statistical analyses
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Session structure}
+Today's class is structured this way: \pause
+\begin{enumerate}
+\item A hands-on presentation of the content material (1 hour long) \pause
+\item A series of exercises (1 hour long) \pause
+\item A review of the exercises run (2 hours long) \pause
+\item + An introduction to more advanced packages if time allows it \pause
+\end{enumerate}
+
+Break: We can decide together on a break when we are roughly mid-way through the class. \pause
+
+!! \textbf{Always} feel free to interrupt me during the presentation for questions or clarifications by raising your virtual hand. I'll try to check on them as often as I can. \pause Worst case scenario: feel free to interrupt me while I speak.
+\end{frame}
+
+\section{0. Introduction to R and RStudio}
+
+\begin{frame}{What is R?}
+\begin{itemize}
+\item A \textbf{programming language} developed specifically for \textbf{professional} data analysis (based on S). \pause No drag and drop \pause
+\item It is a powerful language. It is suited to two types of works: \pause
+	\begin{enumerate}
+	\item An interactive work; users employ packages and functions that were already written (today's session) \pause
+	\item A programming work, more advanced; users write new functions and contribute to the language \pause
+	\end{enumerate}
+\item R has a rather steep learning curve, but the passage from 1. to 2. comes quicker than expected \pause
+\item R is free and open source, and there is an incredible community that uses the language and contributes to it \pause
+\item We need to have R installed on our computer to make it run
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What is RStudio?}
+We don't run R directly in it. We run it in RStudio. \pause What is RStudio? \pause
+\begin{itemize}
+\item It is an integrated development environment (IDE) \pause
+\item It automatically flags syntax errors and assigns different colors to different chunks of code \pause
+\item The basic version (the one you'll need 99.999\% of the times) is free \pause
+\item We still need to have R installed on our computer in order for RStudio to properly run \pause
+\end{itemize}
+
+\textbf{Always} run the code in RStudio \textbf{from a script} (.R extension). \pause Don't run it from the console
+\end{frame}
+
+\section{1. Topic presentation (in RStudio)}
+
+\section{2. Exercises}
+
+\begin{frame}{Instructions}
+\begin{itemize}
+\item Now we'll run some exercises directly in RStudio to apply what we've seen before \pause
+\item You'll work individually to complete the script \texttt{intro\_to\_R\_ex\_blank.R} that I have provided you with \pause
+\item In case you have questions, please raise your virtual hand and I will create a separate breakout room \pause
+\item I'll try to keep a list of raised hands in order not to miss anyone \pause
+\item If questions are relevant to all, I'll answer them in the classroom \pause
+\item \textbf{Remember:} there is more than one way of doing what exercises ask!
+\end{itemize}
+\end{frame}
+
+\section{3. Review of exercises}
+
+\section{4. Extra topics}
+
+\begin{frame}{Useful R packages}
+Some R packages we haven't covered but that might be useful to some of you: \\ \pause
+
+\begin{center}
+\resizebox{10cm}{!}{
+\begin{tabular}{lll}
+\textbf{Type} 		& \textbf{Package name} 	& \textbf{Aim} \\
+Data import			& \texttt{foreign} 	& Imports \texttt{.dta} files when \texttt{haven} doesn't \\
+					& \texttt{readr}	& Imports files from various formats \\
+\hline
+Data cleaning 		& \texttt{reshape} 	& Turning long datasets into wide and viceversa\\
+					& \texttt{tidyr} 	& Tidy datasets \\
+\hline
+Plots 				& \texttt{ggplot2} 	& Plots based on Grammar of Graphics \\
+					& \texttt{lattice}	& Plots, less versatile than \texttt{ggplot2} \\
+\hline
+Standard errors		& \texttt{sandwich} + \texttt{lmtest}  & Robust and clustered standard errors + test coefficients \\
+					& \texttt{estimatr} & Alternative to \texttt{sandwich} and \texttt{lmtest} \\
+\hline
+Modelling			& \texttt{plm} 		& Panel data models (within-between estimator) \\
+					& \texttt{ggeffects}& Marginal effects from models \\
+					& \texttt{AER} 		& Various (Instrumental variable, tobit models) \\ 
+					& \texttt{MASS} 	& Various (ordered logit and probit) \\ 
+					& \texttt{mlogit} or \texttt{mnlogit}	& Multinomial logit models \\
+					& \texttt{lme4} 	& Multilevel models \\
+					& \texttt{rdd} 		& Regression discontinuity design \\
+					& \texttt{zoo} or \texttt{forecast} & Time series tools \\
+\end{tabular}
+}
+\end{center}
+\end{frame}
+
+\begin{frame}{That's all}
+\centering
+Thank you for the attention! \smallskip
+
+Lorenzo Crippa\\
+l.crippa@essex.ac.uk
+\end{frame}
+\end{document}
