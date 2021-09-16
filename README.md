@@ -10,7 +10,7 @@ Folders:
 
 - `runfiles` contains class R code, exercises, and solutions
 
-- `slides` contains \LaTeX code used to generate slides
+- `slides` contains LaTeX code used to generate slides
 
 ### 2020 edition - 1X
 
