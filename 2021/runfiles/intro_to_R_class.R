@@ -69,7 +69,7 @@ a*b # the program returns the product of a and b, 10.
 a+b
 a-b
 
-lorenzo*a*b
+lorenzo*a*b # doesn't know lorenzo!
 
 # notice this:
 a + b == 8 # this is a statement, and it means: a + b equals 8. Is it 8? No! Then it's FALSE, or F
@@ -375,7 +375,7 @@ rm(list = ls())
 # i.e. the folder on our computer where we are going to work from, where we store our data
 # and where perhaps we might want to save our plots or the outputs from the analysis.
 # In R we do it using the setwd() function:
-setwd("/Users/Lorenzo/Documents/Università/University_of_Essex/Teaching/ESS/Introduction_to_R/2021")
+setwd("/Users/Lorenzo/Documents/GitHub/Intro_to_R/2021")
 # change that string with the one that corresponds to the location of your wd and run the code!
 getwd()
 
