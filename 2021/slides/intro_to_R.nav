@@ -1,0 +1,39 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/8}{}{0}}
+\headcommand {\beamer@framepages {2}{8}}
+\headcommand {\slideentry {0}{0}{3}{9/16}{}{0}}
+\headcommand {\beamer@framepages {9}{16}}
+\headcommand {\beamer@sectionpages {1}{16}}
+\headcommand {\beamer@subsectionpages {1}{16}}
+\headcommand {\sectionentry {1}{0. Introduction to R and RStudio}{17}{0. Introduction to R and RStudio}{0}}
+\headcommand {\slideentry {1}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {1}{0}{2}{18/24}{}{0}}
+\headcommand {\beamer@framepages {18}{24}}
+\headcommand {\slideentry {1}{0}{3}{25/29}{}{0}}
+\headcommand {\beamer@framepages {25}{29}}
+\headcommand {\beamer@sectionpages {17}{29}}
+\headcommand {\beamer@subsectionpages {17}{29}}
+\headcommand {\sectionentry {2}{1. Data types, R objects, data manipulation}{30}{1. Data types, R objects, data manipulation}{0}}
+\headcommand {\slideentry {2}{0}{1}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@sectionpages {30}{30}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\headcommand {\sectionentry {3}{2. Plotting and basic summary statistics}{31}{2. Plotting and basic summary statistics}{0}}
+\headcommand {\slideentry {3}{0}{1}{31/31}{}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@sectionpages {31}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\sectionentry {4}{Extra topics}{32}{Extra topics}{0}}
+\headcommand {\slideentry {4}{0}{1}{32/32}{}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\slideentry {4}{0}{2}{33/34}{}{0}}
+\headcommand {\beamer@framepages {33}{34}}
+\headcommand {\slideentry {4}{0}{3}{35/35}{}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\beamer@partpages {1}{35}}
+\headcommand {\beamer@subsectionpages {32}{35}}
+\headcommand {\beamer@sectionpages {32}{35}}
+\headcommand {\beamer@documentpages {35}}
+\headcommand {\gdef \inserttotalframenumber {7}}

@@ -1,0 +1,14 @@
+\frametitle{Question 2 -- (h)}
+Run the Hausman test and determine whether the fixed effects or the random effects model is more appropriate for the data at hand. \pause
+\begin{verbatim}
+     Hausman Test
+data:  FTM ~ voteDem + dem + poor + white
+chisq = 10.135, df = 4, p-value = 0.03822
+alternative hypothesis: one model is inconsistent
+\end{verbatim} \pause
+\begin{itemize}
+\item We reject the null, thus we should use a FE model. \pause
+\item \textbf{Yet} a Hausman test only cares about the precision of the estimate, and it is not everything we need to consider \pause
+\item In this case we know we have lots of within and not so much between variation: a RE model still makes sense \pause
+\item In these cases you can estimate both and hope to get similar results
+\end{itemize}
