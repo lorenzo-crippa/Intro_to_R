@@ -9,7 +9,7 @@
 rm(list = ls())
 
 # set working directory (change path using the location of your working directory)
-setwd("/Users/Lorenzo/Documents/Università/University_of_Essex/Teaching/ESS/Introduction_to_R/2021")
+setwd("/Users/Lorenzo/Documents/GitHub/Intro_to_R/2021")
 
 # 1) R DATA TYPES AND OBJECTS, IMPORT AND MANAGE DATASETS ----
 # When possible, run exercises 1-5 using base R and tidyverse
