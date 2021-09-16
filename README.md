@@ -4,6 +4,8 @@
 
 ### 2021 edition - 1X
 
+Main change from 2020 edition has been a much stronger focus on `tidyverse`. 2020 version was introducing base R with only little `tidyverse` coding. It was leaving `ggplot2` introduction to a separate optional R script, and it was only introducing `ggplot2::qplot()`. 2021 version introduces base R and `tidyverse` in parallel.
+
 Folders:
 
 - `runfiles` contains class R code, exercises, and solutions
